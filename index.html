@@ -110,31 +110,10 @@
                 <div class="col-md-3">
                     <nav class="docs-sidebar" data-spy="affix" data-offset-top="300" data-offset-bottom="200" role="navigation">
                         <ul class="nav">
-                            <li><a href="#line1">Roblox API Access</a>
+                            <li><a href="#line1">Global HTML Templates</a>
                                 <ul class="nav">
-                                    <li><a href="#line1_1">Retrieving a Game’s General Information</a></li>
-                                    <li><a href="#line1_2">Retrieving a Game’s Icon</a></li>
+                                    <li><a href="#line1_1">Inject the Global Navbar Into the Header of a Website</a></li>
                                 </ul></li>
-                            <!--li><a href="#line2">How to Install WordPress</a></li>
-                            <li><a href="#line3">How to Install Theme</a></li>
-                            <li><a href="#line4">Necessary Plugins</a></li>
-                            <li><a href="#line5">Creating Blog Pages</a></li>
-                            <li><a href="#line6">Revolution Slider</a></li>
-                            <li><a href="#line7">How to Use Option Panel</a>
-                                <ul class="nav">
-                                    <li><a href="#line7_1">General Options</a></li>
-                                    <li><a href="#line7_2">Style Options</a></li>
-                                    <li><a href="#line7_3">Header Options</a></li>
-                                    <li><a href="#line7_4">Font Options</a></li>
-                                    <li><a href="#line7_5">Slider Options</a></li>
-                                    <li><a href="#line7_6">Page Options</a></li>
-                                    <li><a href="#line7_7">Import & Export</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#line8">Support Desk</a></li>
-                            <li><a href="#line9">Files & Sources</a></li>
-                            <li><a href="#line10">Version History (Changelog)</a></li>
-                            <li><a href="#line11">Copyright and license</a></li-->
                         </ul>
                     </nav >
                 </div>
@@ -181,37 +160,19 @@
 
                         <div class="row">
                             <div class="col-md-12">
-                                <p>Accessing <code>Roblox's APIs</code> can be rather tricky, as they block requests from static websites.
-                                    Therefore, this API enables you to retrieve information from <code>Roblox's APIs</code> via XMLHttpRequests without having to create a web server yourself or installing external wrappers.
-                                
-                                <br><br>This feature is mainly used by the Roblox Horrorlist.</p>
-                                
+                                <p>As the name suggests, this section focuses on <code>HTML templates</code> that can be injected.
+                                    This feature is used, for instance, by each site on the nouhi.dev domain to share a global navbar.
 
-                                <h4 id="line1_1">Retrieving a Game’s General Information</h4>
+                                <h4 id="line1_1">Inject the Global Navbar Into the Header of a Website</h4>
                                 <div class="intro1">
                                     <ul>
-                                        <li><strong>Parameters:</strong></li>
-                                        <li><strong>UniverseID</strong> (int)</li>
+                                        <li><strong>Asset: </strong><a href="https://nouhi.dev/assets/html-templates/navbar.txt">navbar.txt</a></li>
+                                        <li><strong>Requirements: </strong>Empty header tag in the HTML body.</li>
                                     </ul>
                                 </div>
 
                                 <br><h5>Example Implementation in JavaScript</h5>
-                                <script src="https://gist.github.com/NouhiDev/0819e57e1b18f873e25e2990ddc3870a.js"></script>
-                                <p><strong>Returns: </strong>An array of objects. (JSON)</p>
-
-                                <br><h4 id="line1_2">Retrieving a Game’s Icon</h4>
-                                <div class="intro1">
-                                    <ul>
-                                        <li><strong>Parameters:</strong></li>
-                                        <li><strong>UniverseID</strong> (int)</li>
-                                    </ul>
-                                </div>
-
-                                <br><h5>Example Implementation in JavaScript</h5>
-                                <script src="https://gist.github.com/NouhiDev/807d15aeaacc76dc02c215f4bdb52d7a.js"></script>
-                                <p><strong>Returns: </strong>An array of objects. (JSON)</p>
-                            </div>
-                            
+                                <script src="https://gist.github.com/NouhiDev/b52db7782d6d6b317838b9a498ee9d69.js"></script>
                         </div>
 
                     </section>
