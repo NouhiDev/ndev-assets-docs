@@ -92,7 +92,7 @@
                     <div class="col-md-12">
                         <div class="big-title text-center">
                             <h1>NDev Assets Documentation</h1>
-                            <p class="lead">NDev-Group | version 1.0</p>
+                            <p class="lead">NDev-Group</p>
                         </div>
                         
                     </div>
@@ -110,9 +110,13 @@
                 <div class="col-md-3">
                     <nav class="docs-sidebar" data-spy="affix" data-offset-top="300" data-offset-bottom="200" role="navigation">
                         <ul class="nav">
-                            <li><a href="#line1">Global HTML Templates</a>
+                            <li><a href="#line1">NDev Global</a>
                                 <ul class="nav">
-                                    <li><a href="#line1_1">Inject the Global Navbar Into the Header of a Website</a></li>
+                                    <li><a href="#line1_1">Reference NDev Global</a></li>
+                                </ul></li>
+                            <li><a href="#line2">NDev Global Unity Override</a>
+                                <ul class="nav">
+                                    <li><a href="#line2_1">Reference Unity Override</a></li>
                                 </ul></li>
                         </ul>
                     </nav >
@@ -152,7 +156,7 @@
 
                         <div class="row">
                             <div class="col-md-12 left-align">
-                                <h2 class="dark-text">Global HTML Templates<hr></h2>
+                                <h2 class="dark-text">NDev Global<hr></h2>
                             </div>
                             
                         </div>
@@ -160,19 +164,56 @@
 
                         <div class="row">
                             <div class="col-md-12">
-                                <p>As the name suggests, this section focuses on <code>HTML templates</code> that can be injected.
-                                    This feature is used, for instance, by each site on the nouhi.dev domain to share a global navbar.
+                                <p><code>NDev Global</code> serves as a base for all sites running on <code>nouhi.dev</code>. Currently, it automatically
+                                adds centralized needs such as the navbar and the loader as well as the required stylesheet.</p>
 
-                                <h4 id="line1_1">Inject the Global Navbar Into the Header of a Website</h4>
+                                <h4 id="line1_1">Reference NDev Global</h4>
                                 <div class="intro1">
                                     <ul>
-                                        <li><strong>Asset: </strong><a href="https://nouhi.dev/assets/html-templates/navbar.txt">navbar.txt</a></li>
-                                        <li><strong>Requirements: </strong>Empty header tag in the HTML body.</li>
+                                        <li><strong>Asset (js): </strong><a href="https://nouhi.dev/assets/global-scripts/ndev-global.js">ndev-global.js</a></li>
+                                        <li><strong>Asset (css): </strong><a href="https://nouhi.dev/assets/global-styles/ndev-global.css">ndev-global.css</a></li>
+                                        <li><strong>Requirements: </strong>jQuery</li>
                                     </ul>
                                 </div>
 
-                                <br><h5>Example Implementation in JavaScript</h5>
-                                <script src="https://gist.github.com/NouhiDev/b52db7782d6d6b317838b9a498ee9d69.js"></script>
+                                <br><h5>Example Implementation in HTML</h5>
+                                <script src="https://gist.github.com/NouhiDev/2850720a9e801f0ac91fe4565ea1fe5e.js"></script>
+                            </div>
+                        </div>
+
+                    </section>
+
+                    <section id="line2" class="section">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">NDev Global Unity Override<hr></h2>
+                            </div>
+                            
+                        </div>
+                        
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p><code>NDev Global Unity Override</code> serves as a base for all sites running on <code>nouhi.dev</code> that
+                                    are based on Unity WebGL builds. It contains adding the base <code>NDev Global JS</code> and <code>NDev Global CSS</code>
+                                    as well as the contextually important <code>NDev Global Unity Override CSS</code>.
+                                    Its main purpose is to give the Unity WebGl builds a normalized look fitting for the rest of the <code>nouhi.dev</code> website.
+                                <br>(Also includes jQuery as <code>NDev Global</code> requires it)</p>
+
+                                <h4 id="line2_1">Reference NDev Global Unity Override JS</h4>
+                                <div class="intro1">
+                                    <ul>
+                                        <li><strong>Asset (js): </strong><a href="https://nouhi.dev/assets/global-scripts/ndev-global.js">ndev-global.js</a></li>
+                                        <li><strong>Asset (css): </strong><a href="https://nouhi.dev/assets/global-styles/ndev-global-unity-override.css">ndev-global-unity-override.css</a></li>
+                                        <li><strong>Asset (css): </strong><a href="https://nouhi.dev/assets/global-styles/ndev-global.css">ndev-global.css</a></li>
+                                        <li><strong>Requirements: </strong>jQuery</li>
+                                    </ul>
+                                </div>
+
+                                <br><h5>Example Implementation in HTML</h5>
+                                <script src="https://gist.github.com/NouhiDev/e33f56f424728e4e0933980f5a39914b.js"></script>
+                            </div>
                         </div>
 
                     </section>
